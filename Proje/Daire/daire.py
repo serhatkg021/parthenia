@@ -20,7 +20,7 @@ def circleScan(frame, camX, camY):
             cv2.rectangle(frame, (x - 5, y - 5),
                         (x + 5, y + 5), (0, 128, 255), -1)
             x = x - camX/2
-            y = y - camY/2
+            y = (y - camY/2) * -1
             return [x,y]
 
 
